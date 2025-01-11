@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Add Roboto Slab font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+<header class="top-bar" id="header">
+  <a href="index.html"><h1 class="portfolio-title">Walter White</h1></a>
+  <nav class="navbar">
+    <ul>
+      <li class="dropdown"><a href="index.html" class="dropdown-toggle">About Me</a>
+        <ul class="dropdown-content">
+          <li><a href="index.html">General Info</a></li>
+          <li><a href="Experience.html">Experience</a></li>
+          <li><a href="your-resume.pdf">Download CV</a></li>
+        </ul>
+      </li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Dark Mode Toggle -->
+<button id="dark-mode-toggle">🌙</button>
+
+<!-- Introduction -->
+<section id="Intro" class="section">
+  <div class="intro-container">
+    <div class="image-container">
+      <img src="white.jpg" alt="Walter White">
+    </div>
+    <div class="intro-text">
+      <h1>Hi, I'm Walter White,<br> Popularly known as Heisenberg</h1>
+      <p class="short-description">Web-developer, ML enthusiast, Blogger</p>
+    </div>
+  </div>
+
+<!-- Buttons Section -->
+<section id="buttons" class="section">
+  <div class="button-container">
+    <!-- Resume Button -->
+    <a href="your-resume.pdf" class="btn" download>
+      <span>Download My Resume</span>
+    </a>
+    <!-- View My Work Button -->
+    <a href="Experience.html" class="btn">
+      <span>View My Work</span>
+    </a>
+  </div>
+</section>
+
+<!-- About Me-->
+<section id="about" class="section">
+  <div class="about-container">
+    <h2>About Me</h2>
+    <!-- Personal Introduction -->
+    <p>
+      Hello! I’m <strong>Walter White</strong>, a <strong>Web Developer</strong>, 
+      <strong>Machine Learning Enthusiast</strong>, and <strong>Blogger</strong>. With a strong foundation 
+      in full-stack development and a passion for artificial intelligence, I specialize in building 
+      dynamic and data-driven applications. My journey began with curiosity about technology and evolved 
+      into crafting solutions that empower users and solve real-world problems.
+    </p>
+    <p>
+      Over the years, I’ve worked on projects ranging from interactive websites to predictive ML models. 
+      I’m also a firm believer in sharing knowledge, which led me to start blogging about coding, 
+      algorithms, and machine learning. My goal is to inspire and assist others on their learning journey 
+      while continuing to grow as a developer and problem solver.
+    </p>
+
+<!-- Skills Overview -->
+<h3>Skills & Technologies</h3>
+  <div class="skills-container">
+    <ul class="skills-column">
+      <li><i class="devicon-html5-plain colored skill-icon"></i> <strong>HTML</strong> - Building the structure of responsive websites.</li>
+      <li><i class="devicon-css3-plain colored skill-icon"></i> <strong>CSS</strong> - Crafting visually appealing designs with animations.</li>
+      <li><i class="devicon-javascript-plain colored skill-icon"></i> <strong>JavaScript</strong> - Enhancing interactivity and building SPAs with React.</li>
+      <li><i class="devicon-nodejs-plain colored skill-icon"></i> <strong>Node.js</strong> - Building scalable back-end services.</li>
+    </ul>
+    <ul class="skills-column">
+      <li><i class="devicon-python-plain colored skill-icon"></i> <strong>Python</strong> - Developing ML models using TensorFlow, NumPy, and Pandas.</li>
+      <li><i class="devicon-docker-plain colored skill-icon"></i> <strong>Docker</strong> - Containerizing applications for seamless deployment.</li>
+      <li><i class="devicon-git-plain colored skill-icon"></i> <strong>Git</strong> - Version control for collaborative development.</li>
+      <li><i class="devicon-wordpress-plain colored skill-icon"></i> <strong>Blogging</strong> - Simplifying tech concepts for learners through writing.</li>
+    </ul>
+  </div>
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <h2>Best Projects</h2>
+  <div class="project-grid">
+    <div class="project-box">
+      <img src="shopify.jpg" alt="Project 1">
+      <h3>E-commerce Platform</h3>
+      <p>A modern, fully responsive e-commerce platform built using React and Node.js. Features include product filtering, secure payment gateways, and an intuitive admin dashboard.</p>
+      <a href="https://example.com/project1" target="_blank">View Project</a>
+    </div>
+    <div class="project-box">
+      <img src="quiz.jpg" alt="Project 2">
+      <h3>Interactive Quiz App</h3>
+      <p>An interactive quiz app built with JavaScript and Firebase for real-time leaderboard updates. Users can create custom quizzes and challenge their friends.</p>
+      <a href="https://example.com/project2" target="_blank">View Project</a>
+    </div>
+    <div class="project-box">
+      <img src="port.jpg" alt="Project 3">
+      <h3>Personal Portfolio Site</h3>
+      <p>A responsive portfolio site showcasing web development projects with smooth animations. Built with HTML, CSS, and JavaScript, featuring dynamic project showcases.</p>
+      <a href="https://example.com/project3" target="_blank">View Project</a>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills-expertise" class="section">
+  <div class="skills-certifications-container">
+    <!-- Left Column: Skills -->
+    <div class="skills-column">
+      <h2>Skills</h2>
+      <div class="skill">
+        <div class="skill-name">HTML & CSS</div>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 95%;">95%</div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 90%;">90%</div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Python</div>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 85%;">85%</div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Machine Learning</div>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 75%;">75%</div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Right Column: Certifications -->
+    <div class="certifications-column">
+      <h2>Certifications & Courses</h2>
+      <ul class="certification-list">
+        <li>
+          <strong>Btech CSE</strong> - IITGN
+        </li>
+        <li>
+          <strong>Mtech CSE</strong> - IITB
+        </li>
+        <li>
+          <strong>Google Data Analytics Certificate</strong> - Coursera
+        </li>
+        <li>
+          <strong>Frontend Development Bootcamp</strong> - FreeCodeCamp
+        </li>
+        <li>
+          <strong>Machine Learning Specialization</strong> - Stanford University
+        </li>
+        <li>
+          <strong>Advanced JavaScript</strong> - Udemy
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="section">
+  <h2>What People Say</h2>
+  <div class="testimonials-container">
+    <!-- Testimonial 1 -->
+    <div class="testimonial-card">
+      <p class="testimonial-quote">"Working with Walter was an absolute pleasure. His attention to detail, problem-solving skills, and commitment to delivering high-quality work are exceptional."</p>
+      <p class="testimonial-author">- Gus Fring, Project Manager at TechCorp</p>
+    </div>
+    <!-- Testimonial 2 -->
+    <div class="testimonial-card">
+      <p class="testimonial-quote">"Walter consistently exceeded expectations on every project we collaborated on. His ability to turn complex problems into simple solutions is unmatched."</p>
+      <p class="testimonial-author">- Hector Salamanca, Senior Developer at WebInnovate</p>
+    </div>
+    <!-- Testimonial 3 -->
+    <div class="testimonial-card">
+      <p class="testimonial-quote">"A true professional who combines technical expertise with a collaborative spirit. Walter brought valuable insights and delivered results beyond what we hoped for."</p>
+      <p class="testimonial-author">- Skyler White, CEO at BrightStartups</p>
+    </div>
+    <!-- Social Proof Links -->
+    <div class="social-proof">
+      <p>Check more recommendations on:</p>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-link">
+        <i class="devicon-linkedin-plain colored"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+  
+<!-- Blogs and Photos -->
+<section id="buttons" class="section">
+  <div class="button-container">
+    <a href="blogs_photos.html" class="btn">
+      <span>Click here to check out my Blogs and Photographs</span>
+    </a>
+  </div>
+</section>
+
+<!-- Contact info -->
+<section id="contact" class="section contact-section">
+  <h2>Contact Me</h2>
+  <div class="contact-links">
+    <!-- GitHub -->
+    <a href="https://github.com/yourusername" target="_blank" class="contact-link">
+      <i class="devicon-github-original contact-icon"></i> GitHub
+    </a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="contact-link">
+      <i class="devicon-linkedin-plain contact-icon"></i> LinkedIn
+    </a>
+    <!-- Twitter/X -->
+    <a href="https://twitter.com/yourusername" target="_blank" class="contact-link">
+      <i class="devicon-twitter-plain contact-icon"></i> Twitter/X
+    </a>
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/yourusername" target="_blank" class="contact-link">
+      <i class="devicon-instagram-plain contact-icon"></i> Instagram
+    </a>
+  </div>
+  <!-- Drop a Mail Button -->
+  <div class="contact-button">
+    <a href="contact.html" class="btn">Drop a Mail</a>
+  </div>
+</section>
+  
+
+<!-- Footer -->
+<footer>
+  <p>© 2024 Walter White. All rights reserved.</p>
+</footer>
+
+<script src="script1.js"></script>
+</body>
+</html>

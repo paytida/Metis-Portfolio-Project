@@ -1,0 +1,225 @@
+/* Applying Roboto Slab font to the entire body */
+  body {
+    font-family: 'Roboto Slab', sans-serif;
+    margin: 0;
+    padding-top: 80px;
+    box-sizing: border-box;
+    line-height: 1.6;
+  }
+  h1, h2, h3 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 700; /* Bold weight for headings */
+  }
+  a {
+    font-family: 'Roboto Slab', sans-serif;
+    text-decoration: none;
+  }
+  button {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 500;
+  }
+  h1, h2, h3, p {
+    font-family: 'Roboto Slab', sans-serif;
+  }
+  body.dark-mode {
+    background-color: #121212;
+    color: #f7f7f7;
+  }
+
+/* Header */
+  .top-bar {
+    position: fixed;
+    top: 0;
+    width: 97%; /* Make it take full width */
+    background: linear-gradient(45deg, #151B54, #00bcd4);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px; /* Reduced padding to make the header thinner */
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
+  }
+  
+/* Initially, the header is visible */
+  header.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  .portfolio-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    position: relative; /* Needed for positioning the dropdown */
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+/* Dropdown menu styling */
+  .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+/* Styling for dropdown items */
+  .dropdown-content li {
+    border-bottom: 1px solid #555;
+  }
+
+  .dropdown-content li:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-content li a {
+    padding: 12px;
+    color: white;
+    text-align: center;
+  }
+
+  .dropdown-content li a:hover {
+    background-color: #666;
+    transition: background-color 0.3s ease;
+  }
+  
+/* When the dropdown is active */
+  .dropdown.active .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+    
+/* Dark Mode Toggle */
+  #dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  #dark-mode-toggle:hover {
+    background: #00bcd4;
+  }
+
+/* Blogs Section */
+  .blogs-section {
+    padding: 40px 20px;
+  }
+
+  .blogs-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .blog-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+
+  .blog-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .blog-card p {
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+  .read-more {
+    text-decoration: none;
+    color: #151B54;
+    font-weight: bold;
+  }
+
+  .read-more:hover {
+    color: #333;
+  }
+
+/* Photos Section */
+  .photos-section {
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+
+  .photos-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .photo {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .photo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
+/* Footer */
+  .blogs-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #151B54;
+    color: white;
+  }
